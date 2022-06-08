@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        body {background-color:cadetblue;}
+        h1   {color: gold; background-color: gray;font-family: Verdana; text-align: center;}
+        p    {color:white; background-color: black;font-family: Arial;font-size: 20px; text-align: left;}
+        </style>
+        <meta charset="utf-8">
+        <meta name="author" content="SLY">
+        <meta name="keywords" content="chinese,mail,SLY">
+        <meta name="description" content="mail">
+        <meta http-equiv="refresh" content="30">
+        <link rel="shortcut icon" href="https://i.ibb.co/qnkn6Xq/Koala.jpg">
+        <title>自动邮件回复</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <script>
+            function displayDate(){
+                document.getElementById("demo").innerHTML=Date();
+            }
+        </script>       
+    </head>
+    <body>
+        <h1>写邮件</h1>
+        <img src="https://i.ibb.co/qnkn6Xq/Koala.jpg" alt="Koala" border="0" />
+        <p>点击下方按钮发送邮件</p>
+        <a href="mailto:slyyy3.14@gmail.com?Subject=Hello%20World&body=Hello%20world" style="text-decoration: none;">发送邮件</a>
+        <p></p>
+        <a href="http://bilibili.com/" target="_blank"><img src = "girl.gif" alt="girl dance"></a><br>
+        <iframe src="file:///H:/python_program/test.html" width="600" height="600" name = "iframe_a"></iframe>
+        <p><a href="http://bilibili.com/" target="iframe_a">bilibili.com</p>
+            <p id="demo"> 当前时间</p>
+            <button type="button" onclick="displayDate()">显示日期 </button>
+        </body>
+    <form action="mailto:3220190609@bit.edu.cn" method="POST" enctype="text/plain">
+        <fieldset>
+            <legend>Personal information</legend>
+            Name: <input type="text" size="30" value="your name"><br>
+            E-mail: <input type="text" size="30" value="your email"><br>
+            Date of birth: <input type="text" size="20" value="your birthday"><br>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </fieldset>
+    </form>
+    <p id="demo"> 当前时间</p>
+    <button type="button" onclick="displayDate()">显示日期 </button>
+</html>
